@@ -1,4 +1,4 @@
-# 🧪 WDIO1 Project
+# 🧪 WDIO E2E TESTING WITH CUCUMBER Project
 
 > WebdriverIO E2E Testing (Web & Mobile Testing With Cucumber)
 

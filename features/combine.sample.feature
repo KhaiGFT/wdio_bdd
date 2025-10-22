@@ -5,8 +5,8 @@ Scenario: As a user, I can log into the secure area
     #Web login
     Given I access the login page on browser
     When I login with following credentials on browser
-        | username | password |
-        | admin    | admin    |
+        | username     | password |
+        | autoQAGFT    | admin    |
     Then I should see home page which title is "Welcome Admin" on browser
     #App login
     Given I access the Login screen on application

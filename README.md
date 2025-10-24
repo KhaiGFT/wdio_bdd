@@ -23,23 +23,39 @@ npm install
 
 ## ▶️ Run Tests
 
-1 - Run test on iOS application
-```bash
-npm run ios.app -- --spec=./features/ios.sample.feature
-```
-2 - Run test on desktop web
+1 - Run test on desktop web
 ```bash
 npm run browser -- --spec=./features/web.sample.feature
 ```
-3 - Run test on desktop web + iOS app
+2 - Run test on iOS application
 ```bash
-npm run combine -- --spec=./features/combine.sample.feature
+npm run ios.app -- --spec=./features/mobile.sample.feature
 ```
-4 - Generate Allure Report
+3 - Run test on iOS browser
+```bash
+npm run ios.browser -- --spec=./features/web.sample.feature
+```
+4 - Run test on desktop web + iOS app
+```bash
+npm run ios.combine -- --spec=./features/combine.sample.feature
+```
+5 - Run test on android app
+```bash
+npm run android.app -- --spec=./features/mobile.sample.feature
+```
+6 - Run test on android web
+```bash
+npm run android.browser -- --spec=./features/web.sample.feature
+```
+7 - Run test on desktop web + android app
+```bash
+npm run android.combine -- --spec=./features/android.sample.feature
+```
+8 - Generate Allure Report
 ```bash
 npm run allure-report
 ```
-5 - Open Appium inspector
+9 - Open Appium inspector
 ```bash
 npm run appium-inspector
 ```

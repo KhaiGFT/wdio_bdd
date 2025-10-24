@@ -1,4 +1,4 @@
-Feature: The Internet Guinea Pig Website
+Feature: Web Login -> App Login -> Web input text, click Save and validate text in saved list -> App input text on Form
 
 Scenario: As a user, I can log into the secure area
 

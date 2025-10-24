@@ -7,7 +7,7 @@ export const config: WebdriverIO.MultiremoteConfig = {
     // ============
     // Specs
     // ============
-    specs: ["../test/specs/**/test.**.ts"],
+    specs: ["../features/**.feature"],
     capabilities: {
     browser: {
         capabilities: {
@@ -16,7 +16,7 @@ export const config: WebdriverIO.MultiremoteConfig = {
     },
     mobile: {
         capabilities: {
-            platformName: "iOS",
+            platformName: "Android",
             "wdio:maxInstances": 1,
             // For W3C the appium capabilities need to have an extension prefix
             // This is `appium:` for all Appium Capabilities which can be found here
@@ -24,22 +24,22 @@ export const config: WebdriverIO.MultiremoteConfig = {
 
             //
             // NOTE: Change this name according to the Simulator you have created on your local machine
-            "appium:deviceName": "iPhone 15",
+            "appium:deviceName": "pixel_3a",
             //
             // NOTE: Change this version according to the Simulator Version you have created on your local machine
-            "appium:platformVersion": "17.4",
+            "appium:platformVersion": "14.0",
             "appium:orientation": "PORTRAIT",
-            "appium:automationName": "XCUITest",
+            "appium:automationName": "UiAutomator2",
             "appium:noReset": false,
             // The path to the app
             "appium:app": join(
                 process.cwd(),
                 "apps",
                 // Change this name according to the app version you downloaded
-                "ios.simulator.wdio.native.app.v1.0.8.zip"
+                "android.wdio.native.app.v1.0.8.apk"
             ),
+            "appium:appWaitActivity": "com.wdiodemoapp.MainActivity",
             "appium:newCommandTimeout": 240,
-            // This is needed to wait for the webview context to become available
             "appium:webviewConnectTimeout": 5000,
             }
         }

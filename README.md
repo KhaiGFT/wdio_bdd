@@ -51,11 +51,23 @@ npm run android.browser -- --spec=./features/web.sample.feature
 ```bash
 npm run android.combine -- --spec=./features/android.sample.feature
 ```
-8 - Generate Allure Report
+8 - Run test which has "@app_smoke" on android app 
+```bash
+npm run android.app -- --cucumberOpts.tags='@app_smoke'
+```
+9 - Run test which has "@web_smoke" on browser
+```bash
+npm run android.app -- --cucumberOpts.tags='@web_smoke'
+```
+10 - Run test which has "@web_smoke" on android app + desktop browser
+```bash
+npm run android.combine -- --cucumberOpts.tags='@e2e_smoke'
+```
+11 - Generate Allure Report
 ```bash
 npm run allure-report
 ```
-9 - Open Appium inspector
+12 - Open Appium inspector
 ```bash
 npm run appium-inspector
 ```

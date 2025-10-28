@@ -1,9 +1,11 @@
+@regression  @e2e_regression 
 Feature: Web Login -> App Login -> Web input text, click Save and validate text in saved list -> App input text on Form
 
+@e2e_smoke
 Scenario: As a user, I can log into the secure area
 
     #Web login
-    Given I access the login page on browser
+    Given I access the Login page on browser
     When I login with following credentials on browser
         | username     | password |
         | autoQAGFT    | admin    |
